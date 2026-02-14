@@ -1,0 +1,10 @@
+{
+  "name": "Arch Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "pacman -Syu --noconfirm base-devel git && echo 'Welcome to Arch Linux!'"
+}
