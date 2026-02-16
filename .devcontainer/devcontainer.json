@@ -2,8 +2,5 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
   "postCreateCommand": "sudo ssh-keygen -A; sudo sshd"
 }

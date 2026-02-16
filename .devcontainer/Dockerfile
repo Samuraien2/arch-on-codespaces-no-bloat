@@ -1,9 +1,8 @@
 FROM archlinux:latest
 
-RUN pacman -Syu --noconfirm sudo git bash openssh x11vnc xorg-server-xvfb \
+RUN pacman -Syu --noconfirm sudo git openssh xpra xorg-server brotli xorg-xauth firefox \
  && echo 'export PS1="[\w]# "' > /root/.bashrc \
- && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
- && locale-gen
+ && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && locale-gen 
 
 SHELL ["/bin/bash", "-c"]
 
